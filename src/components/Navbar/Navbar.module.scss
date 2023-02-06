@@ -11,11 +11,12 @@
   width: 100vw;
   z-index: 1;
   @media(max-width: $tablet) {
+    padding: 0 50px 0 50px;
     grid-template-areas:
       'logo logo'
       'links icones'
       'busca busca';
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr;
     height: 200px;
     justify-items: center;
@@ -26,9 +27,13 @@
 }
 
 .logo {
+  
   cursor: pointer;
   height: 30px;
   grid-area: logo;
+  @media(max-width: $tablet) { 
+    width: 50%;
+  }
 }
 
 .links {
@@ -37,7 +42,7 @@
   justify-content: flex-start;
   gap: 20px;
   @media(max-width: $tablet) {
-    justify-self: start;
+    justify-self: center;
   }
 }
 
@@ -51,6 +56,9 @@
   display: flex;
   grid-area: busca;
   width: 100%;
+  @media(max-width: $tablet) {
+    width: 80%;
+  }
 }
 
 .selected {
