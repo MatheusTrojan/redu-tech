@@ -16,6 +16,7 @@ export default function Home() {
         titulo="Classificados Tech"
         descricao="Adquira os melhores cursos de programação disponíveis no mercado!"
         className={styles.header}
+        imagem={logosCursos}
       />
       <div className={styles.categorias}>
         <div className={styles["categorias-title"]}>

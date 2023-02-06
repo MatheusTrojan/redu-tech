@@ -16,10 +16,16 @@
 }
 
 .header {
-  display: flex;
-  margin-bottom: 100px;
+  display: grid;
+  grid-template-areas: 'texto imagem';
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
   @media(max-width: $tablet) {
     gap: 20px;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'texto' 'imagem';
+    text-align: center;
   }
   &-texto {
     color: white;
@@ -37,5 +43,16 @@
       justify-content: center;
     }
   }
-
+  &-imagem {
+    align-self: center;
+    grid-area: imagem;
+    justify-self: center;
+    overflow: hidden;
+    max-width: 700px;
+    img {
+      border-radius: 100px;
+      border: 3px solid white;
+      width: 100%;
+    }
+  }
 }
