@@ -4,6 +4,7 @@ import { FaCartPlus } from "react-icons/fa"
 import { mudarFavorito } from 'store/reducers/itens';
 import { useDispatch, useSelector } from "react-redux"
 import { mudarCarrinho } from 'store/reducers/carrinho';
+import classNames from 'classnames';
 
 
 const iconeProps = {
@@ -19,7 +20,8 @@ export default function Item(props) {
         preco,
         descricao,
         favorito,
-        id
+        id,
+        carrinho
     } = props;
 
     const dispatch = useDispatch();
@@ -34,7 +36,9 @@ export default function Item(props) {
     }
 
     return (
-        <div className={styles.item}>
+        <div className={classNames(styles.item, {
+            [styles.itemNoCarrinho]: carrinho
+        })}>
             <div className={styles["item-imagem"]}>
                 <img src={foto} alt={titulo} />
             </div>
