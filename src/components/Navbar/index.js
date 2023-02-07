@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from "../../assets/logo.svg";
 import classNames from 'classnames';
 import { RiShoppingCart2Line, RiShoppingCartFill } from "react-icons/ri";
 import Busca from 'components/Busca';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const iconeProps = {
    color: "white",
@@ -11,16 +12,20 @@ const iconeProps = {
 } 
 
 export default function Navbar() {
+
+   const location = useLocation();
+   const navigate = useNavigate();
+
    return (
       <nav className={styles.nav}>
-         <Logo className={styles.logo} />
+         <Logo className={styles.logo} onClick={() => navigate("/")} />
          <div className={styles.links}>
             <div>
-               <a href='/' className={classNames(styles.link, {
-                  [styles.selected]: window.location.pathname === "/"
+               <Link to='/' className={classNames(styles.link, {
+                  [styles.selected]: location.pathname === "/"
                })}>
                   Página inicial
-               </a>
+               </Link>
             </div>
          </div>
 
@@ -29,12 +34,12 @@ export default function Navbar() {
          </div>
             
          <div className={styles.icones}>
-            <a href='/carrinho'>
-               {window.location.pathname === "/carrinho"
+            <Link to='/carrinho'>
+               {location.pathname === "/carrinho"
                   ? <RiShoppingCartFill {...iconeProps} />
                   : <RiShoppingCart2Line {... iconeProps} />
                }
-            </a>
+            </Link>
          </div>
       </nav>
    )
