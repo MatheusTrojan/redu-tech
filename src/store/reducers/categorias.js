@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import frontThumb from "assets/categorias/thumbnail/front-end.png"
-import devOpsThumb from "assets/categorias/thumbnail/devops.png"
-import UxThumb from "assets/categorias/thumbnail/ux-design.png"
-import dataScienceThumb from "assets/categorias/thumbnail/data-science.png"
-import mobileThumb from "assets/categorias/thumbnail/mobile.png"
+import frontThumb from "assets/categorias/front-end.png"
+import devOpsThumb from "assets/categorias/devops.png"
+import UxThumb from "assets/categorias/ux-design.png"
+import dataScienceThumb from "assets/categorias/data-science.png"
+import mobileThumb from "assets/categorias/mobile.png"
 
 const initialState = [{ 
         nome: 'Front-end',
