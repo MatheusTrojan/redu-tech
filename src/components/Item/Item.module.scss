@@ -6,6 +6,7 @@
     flex-direction: column;
     overflow: hidden;
     width: 335px;
+    transition: 0.5s ease-in-out;
     &-descricao {
       background-color: #EFF9FF;
       display: flex;
@@ -63,6 +64,9 @@
       flex-direction: column;
       gap: 5px;
     }
+  }
+  .item:hover {
+    scale: 1.1;
   }
   
   .itemNoCarrinho {
