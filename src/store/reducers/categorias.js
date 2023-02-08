@@ -9,31 +9,26 @@ import mobileThumb from "assets/categorias/mobile.png"
 const initialState = [{ 
         nome: 'Front-end',
         thumbnail: frontThumb,
-        header: frontThumb,
         id: 'frontend',
         descricao: 'Desenvolva experiências web incríveis com HTML, CSS e JavaScript, e se aprofunde nos principais frameworks do mercado!'
       }, {
         nome: 'DevOps',
         thumbnail: devOpsThumb,
-        header: devOpsThumb,
         id: 'devops',
         descricao: 'Explore a Internet das Coisas, desenvolva infraestruturas completas e crie um pipeline de construção de software.'
       }, {
         nome: 'UX & Design',
         thumbnail: UxThumb,
-        header: UxThumb,
         id: 'uxdesign',
         descricao: 'O universo de UX & Design é gigante. Crie diferentes layouts para plataformas digitais, edite vídeos e desenvolva animações.'
       }, {
         nome: 'Data Science',
         thumbnail: dataScienceThumb,
-        header: dataScienceThumb,
         id: 'datascience',
         descricao: 'Descubra as diferentes possibilidades de análise de dados, do Excel ao Python, e mergulhe em frameworks e bibliotecas.'
       }, {
         nome: 'Mobile',
         thumbnail: mobileThumb,
-        header: mobileThumb,
         id: 'mobile',
         descricao: 'Desenvolva aplicativos móveis, nativos ou multiplataforma, para as principais plataformas, smartphones e tablets.'
     }];

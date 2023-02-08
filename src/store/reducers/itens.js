@@ -24,7 +24,7 @@ const initialState = [{
     descricao: 'HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.',
     foto: htmlLogo,
     favorito: false,
-    preco: 315,
+    preco: 19.9,
     id: uuid(),
     categoria: 'frontend'
   },
@@ -33,7 +33,7 @@ const initialState = [{
     descricao: 'CSS é a sigla para Cascading Style Sheets, ou seja, Folhas de Estilo em Cascatas. É uma maneira de dar estilo ao código criado por linguagens como HTML, XML ou XHTML, por exemplo.',
     foto: cssLogo,
     favorito: false,
-    preco: 280,
+    preco: 20,
     id: uuid(),
     categoria: 'frontend'
   },
@@ -42,7 +42,7 @@ const initialState = [{
     descricao: 'JavaScript é uma linguagem de script orientada a objetos, multiplataforma. É uma linguagem pequena e leve.',
     foto: javascriptLogo,
     favorito: false,
-    preco: 420,
+    preco: 27.5,
     id: uuid(),
     categoria: 'frontend'
   },
@@ -51,7 +51,7 @@ const initialState = [{
     descricao: 'Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples.',
     foto: bootstrapLogo,
     favorito: false,
-    preco: 350,
+    preco: 30,
     id: uuid(),
     categoria: 'frontend'
   },
@@ -60,7 +60,7 @@ const initialState = [{
     descricao: 'O SASS é uma linguagem de extensão do CSS, a sigla significa “Syntactically Awesome Style Sheets” traduzindo ao pé da letra, folhas de estilo com uma sintaxe incrível.',
     foto: sassLogo,
     favorito: false,
-    preco: 400,
+    preco: 32.5,
     id: uuid(),
     categoria: 'frontend'
   },
@@ -69,7 +69,7 @@ const initialState = [{
     descricao: 'O React é uma biblioteca JavaScript declarativa, eficiente e flexível para criar interfaces com o usuário.',
     foto: reactLogo,
     favorito: false,
-    preco: 450,
+    preco: 49.9,
     id: uuid(),
     categoria: 'frontend'
   },
@@ -78,7 +78,7 @@ const initialState = [{
     descricao: 'Aprenda a usar a plataforma de mensageira tipicamente usada em uma arquitetura de Microsserviços.',
     foto: apacheLogo,
     favorito: false,
-    preco: 325,
+    preco: 39.9,
     id: uuid(),
     categoria: 'devops'
   },
@@ -87,7 +87,7 @@ const initialState = [{
     descricao: 'Prepare-se para uma das certificações mais procuradas no mercado. Seja reconhecido pelos seus conhecimentos nos principais serviços da AWS.',
     foto: awsLogo,
     favorito: false,
-    preco: 400,
+    preco: 34.9,
     id: uuid(),
     categoria: 'devops'
   },
@@ -96,7 +96,7 @@ const initialState = [{
     descricao: 'Manter aplicações seguras na Web é uma tarefa bem difícil atualmente. Existem diversos ataques que podem atingi-las e, com o passar do tempo, vulnerabilidades vão surgindo e sendo descobertas.',
     foto: ciberSegLogo,
     favorito: false,
-    preco: 350,
+    preco: 29.9,
     id: uuid(),
     categoria: 'devops'
   },
@@ -105,7 +105,7 @@ const initialState = [{
     descricao: 'Já imaginou tratar imagens, editar vídeos e desenhar logos sem precisar de um computador? Com os aplicativos na versão mobile da Adobe, você vai expandir o seu universo criativo e dar vida às suas ideias em qualquer lugar que estiver!',
     foto: adobeLogo,
     favorito: false,
-    preco: 330,
+    preco: 19.9,
     id: uuid(),
     categoria: 'uxdesign'
   },
@@ -114,7 +114,7 @@ const initialState = [{
     descricao: 'Aprenda os principais conceitos e ferramentas para executar projetos de diagramação no Adobe InDesign.',
     foto: inDesignLogo,
     favorito: false,
-    preco: 290,
+    preco: 24.9,
     id: uuid(),
     categoria: 'uxdesign'
   },
@@ -123,7 +123,7 @@ const initialState = [{
     descricao: 'Aprenda as principais ferramentas e conceitos para criar peças gráficas no Photoshop.',
     foto: photoshopLogo,
     favorito: false,
-    preco: 275,
+    preco: 27.5,
     id: uuid(),
     categoria: 'uxdesign'
   },
@@ -132,7 +132,7 @@ const initialState = [{
     descricao: 'Domine a principal ferramenta de edição de planilhas e conheça as principais funções do mercado para aplicar no seu dia a dia.',
     foto: excelLogo,
     favorito: false,
-    preco: 180,
+    preco: 18.9,
     id: uuid(),
     categoria: 'datascience'
   },
@@ -141,7 +141,7 @@ const initialState = [{
     descricao: 'Aprenda a tecnologia que não para de crescer!',
     foto: machineLogo,
     favorito: false,
-    preco: 320,
+    preco: 18.9,
     id: uuid(),
     categoria: 'datascience'
   },
@@ -150,7 +150,7 @@ const initialState = [{
     descricao: 'Crie aplicativos nativos para iOS com Swift.',
     foto: iosLogo,
     favorito: false,
-    preco: 350,
+    preco: 36.9,
     id: uuid(),
     categoria: 'mobile'
   },
@@ -159,7 +159,7 @@ const initialState = [{
     descricao: 'Programe na principal plataforma Mobile do mundo.',
     foto: androidLogo,
     favorito: false,
-    preco: 350,
+    preco: 36.9,
     id: uuid(),
     categoria: 'mobile'
   },
@@ -168,7 +168,7 @@ const initialState = [{
     descricao: 'Aprenda a criar aplicativos multiplataforma com o Flutter.',
     foto: flutterLogo,
     favorito: false,
-    preco: 400,
+    preco: 29.9,
     id: uuid(),
     categoria: 'mobile'
   }
