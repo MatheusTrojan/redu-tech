@@ -3,7 +3,7 @@ import { AiOutlineHeart, AiFillHeart, AiFillMinusCircle, AiFillPlusCircle } from
 import { FaCartPlus } from "react-icons/fa"
 import { mudarFavorito } from 'store/reducers/itens';
 import { useDispatch, useSelector } from "react-redux"
-import { mudarCarrinho, mudarQuantidade } from 'store/reducers/carrinho';
+import { mudarCarrinho, mudarQuantidade, removerItem } from 'store/reducers/carrinho';
 import classNames from 'classnames';
 
 
@@ -41,6 +41,10 @@ export default function Item(props) {
         dispatch(mudarCarrinho(id));
     }
 
+    function removerDoCarrinho(id){
+        dispatch(removerItem(id))
+    }
+
     return (
         <div className={classNames(styles.item, {
             [styles.itemNoCarrinho]: carrinho
@@ -51,8 +55,9 @@ export default function Item(props) {
 
             <div className={styles["item-descricao"]}>
                 <div className={styles["item-titulo"]}>
-                    <h2>{titulo}</h2>
+                    <h2>Curso de {titulo}</h2>
                     <p>{descricao}</p>
+                    <button onClick={() => removerDoCarrinho(id)}>X</button>
                 </div>
                 <div className={styles["item-info"]}>
                     <div className={styles["item-preco"]}>
@@ -70,7 +75,7 @@ export default function Item(props) {
                                     <AiFillMinusCircle 
                                         {...quantidadeProps} 
                                         onClick={() => {
-                                            if(quantidade >= 1) {
+                                            if(quantidade > 1) {
                                                 dispatch(mudarQuantidade({ id, quantidade: -1 }))
                                             }
                                         }}

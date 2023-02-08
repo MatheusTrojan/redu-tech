@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import { RiShoppingCart2Line, RiShoppingCartFill } from "react-icons/ri";
 import Busca from 'components/Busca';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useSelector } from "react-redux"
 
 const iconeProps = {
    color: "white",
@@ -15,6 +16,15 @@ export default function Navbar() {
 
    const location = useLocation();
    const navigate = useNavigate();
+   
+   const { carrinhoReduce } = useSelector(state => {
+      const carrinhoReduce = state.carrinho.reduce((itens, itemNoCarrinho) => {
+         return itens += itemNoCarrinho.quantidade;
+      }, 0);
+      return { 
+         carrinhoReduce
+      };
+   });
 
    return (
       <nav className={styles.nav}>
@@ -40,6 +50,7 @@ export default function Navbar() {
                   : <RiShoppingCart2Line {... iconeProps} />
                }
             </Link>
+            <span className={styles.link}>{carrinhoReduce}</span>
          </div>
       </nav>
    )
