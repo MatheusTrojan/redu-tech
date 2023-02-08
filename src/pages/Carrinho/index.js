@@ -1,9 +1,13 @@
 import Header from "components/Header"
 import styles from "./Carrinho.module.scss"
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
 import Item from "components/Item"
+import { resetarCarrinho } from "store/reducers/carrinho";
+import Swal from "sweetalert2";
 
 export default function Carrinho() {
+
+    const dispatch = useDispatch();
 
     const { carrinho, total } = useSelector(state => {
         let total = 0;
@@ -38,6 +42,44 @@ export default function Carrinho() {
                         Subtotal: <strong> R$ {total.toFixed(2)} </strong>
                     </span>
                 </div>
+
+                <button
+                    className={styles.finalizar}
+                    onClick={() => {
+                        console.log(carrinho.length)
+                        if (carrinho.length > 0) {
+                            Swal.fire({
+                                title: 'Compra finalizada com sucesso!',
+                                icon: 'success',
+                                showConfirmButton: false,
+                                showClass: {
+                                    popup: 'animate__animated animate__fadeInDown'
+                                },
+                                hideClass: {
+                                    popup: 'animate__animated animate__fadeOutUp'
+                                }
+                            })
+                            setTimeout(function() { 
+                                dispatch(resetarCarrinho())
+                             }, 1000)                    
+                        } else {
+                            Swal.fire({
+                                title: 'O carrinho não pode estar vazio!',
+                                icon: 'error',
+                                showConfirmButton: false,
+                                timer: 1500,
+                                showClass: {
+                                    popup: 'animate__animated animate__fadeInDown'
+                                },
+                                hideClass: {
+                                    popup: 'animate__animated animate__fadeOutUp'
+                                }
+                            })
+                        }
+                    }}
+                >
+                    Finalizar Compra
+                </button>
             </div>
         </div>
     )
