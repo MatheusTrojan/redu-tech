@@ -1,3 +1,5 @@
+@import 'styles/breakpoints';
+
 .item {
     background-color: white;
     border-radius: 10px;
@@ -13,6 +15,9 @@
       flex-direction: column;
       justify-content: space-between;
       flex: 1;
+      @media(max-width: $mobile-sm) {
+        font-size: 14px;
+      }
     }
     &-titulo {
       padding: 16px 16px 0 16px;
@@ -31,6 +36,11 @@
         height: 200px;
         padding: 0.5em;
       }
+      @media(max-width: $mobile-sm) {
+        img {
+          height: 100px;
+        }
+      }
     }
   
     &-info {
@@ -47,6 +57,11 @@
       height: 70px;
       justify-content: center;
       width: 170px;
+      @media(max-width: $mobile-sm) {
+        font-size: 14px;
+        height: 40px;
+        width: 120px;
+      }
     }
     &-acoes {
       align-items: center;
@@ -87,10 +102,16 @@
       gap: 50px;
       justify-content: flex-end;
       padding: 0 50px;
+      @media(max-width: $mobile-sm) {
+        padding: 0 10px;
+      }
     }
     .remover {
       position: absolute;
       top: 0;
       right: 0;
+    }
+    @media(max-width: $mobile-sm) {
+      
     }
   }

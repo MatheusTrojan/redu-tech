@@ -1,13 +1,19 @@
+@import 'styles/breakpoints';
+
 .carrinho {
     align-items: flex-end;
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px 100px;
+    @media(max-width: $mobile-sm) {
+      padding: 30px 25px;
+    }
   }
   
   .total {
     background-color: #EFF9FF;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     max-width: 800px;
