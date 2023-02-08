@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Loja ReduTech
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>Página web criada para cumprir o desafio técnico da MKS Sistemas.</p>
 
-## Available Scripts
+## Conteúdo deste Readme:
 
-In the project directory, you can run:
+- [Resumo](#resumo)
+  - [O Desafio](#o-desafio)
+  - [Screenshot](#screenshot)
+  - [Deploy](#deploy)
+- [Meu processo](#meu-processo)
+  - [Projetado com](#projetado-com)
+  - [O que eu aprendi](#o-que-eu-aprendi)
+- [Autores](#autores)
 
-### `npm start`
+## Resumo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### O Desafio
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O objetivo principal deste projeto é aprender sobre as funcionalidades do Redux, através da criação de uma página de uma loja de cursos, onde o usuário poderá adicionar ao carrinho e finalizar a compra. O site é completamente responsivo.
 
-### `npm test`
+O usuário deverá conseguir:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Navegar pelos produtos disponibilizados em cada categoria;
+- Escolher quais cursos quer acrescentar em seu carrinho de compras;
+- Favoritar os cursos, bem como utlizar a barra de busca no cabeçalho para filtrar os itens;
+- Verificar a quantidade total de itens ao lado do botão do carrinho de compras, localizado no cabeçalho;
+- Acessar a página do carrinho de compras através do botão no cabeçalho;
+- Navegar pelos cursos selecionados, com a opção de aumentar ou diminuir a quantidade, bem como excluir algum curso do carrinho;
+- Acompanhar o valor total da compra de forma simultânea e finalizar a compra através do botão;
+- Acessar o site através de qualquer tamanho de tela;
+- Não deverá conseguir finalizar a compra com o carrinho vazio;
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Página inicial
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](/public/prints/print1.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Cursos disponíveis dentro da categoria Front End
 
-### `npm run eject`
+![](/public/prints/print2.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Filtro aplicado na barra de pesquisa e cursos adicionados ao carrinho de compras
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](/public/prints/print3.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Carrinho de compras com os produtos selecionados
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![](/public/prints/print4.png)
 
-## Learn More
+#### Valor total da compra junto do botão de finalizar compra
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![](/public/prints/print5.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Compra finalizada com sucesso
 
-### Code Splitting
+![](/public/prints/print6.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Deploy
 
-### Analyzing the Bundle Size
+Confira o projeto em funcionamento através do [link](https://redu-tech.vercel.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Processo de Criação
 
-### Making a Progressive Web App
+### Projetado com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React;
+- JavaScript;
+- SASS;
+- Redux;
+- Hook useEffect;
+- Componentes Reutilizáveis;
+- Animações com o SweetAlert;
+- RegExp para filtragem na barra de pesquisa;
 
-### Advanced Configuration
+### O que eu aprendi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🟢 Manipulação de estados globais com o Redux<br>
+🟢 Estilização com SASS<br>
+🟢 Aplicação de filtros com expressões regulares<br>
 
-### Deployment
+## Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Matheus Trojan](https://www.linkedin.com/in/matheus-trojan/)
