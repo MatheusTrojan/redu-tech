@@ -10,9 +10,15 @@ import reactLogo from "assets/itens/react.png"
 import awsLogo from "assets/itens/aws.png"
 import apacheLogo from "assets/itens/apache.png"
 import ciberSegLogo from "assets/itens/cyber-security.png"
+import linuxLogo from "assets/itens/linux.png"
+import segDefLogo from "assets/itens/seg-def.png"
+import segOfLogo from "assets/itens/seg-of.png"
 import adobeLogo from "assets/itens/adobe.png"
 import inDesignLogo from "assets/itens/indesign.png"
 import photoshopLogo from "assets/itens/photoshop.png"
+import figmaLogo from "assets/itens/figma.png"
+import canvaLogo from "assets/itens/canva.png"
+import premiereLogo from "assets/itens/premiere.png"
 import excelLogo from "assets/itens/excel.png"
 import machineLogo from "assets/itens/machine-learning.png"
 import iosLogo from "assets/itens/ios.png"
@@ -101,6 +107,33 @@ const initialState = [{
     categoria: 'devops'
   },
   {
+    titulo: 'Linux',
+    descricao: 'Comece a usar Linux de forma rápida e prática.',
+    foto: linuxLogo,
+    favorito: false,
+    preco: 24.9,
+    id: uuid(),
+    categoria: 'devops'
+  },
+  {
+    titulo: 'Segurança Defensiva',
+    descricao: 'Aprenda como proteger aplicações de diferentes ataques e ameaças!.',
+    foto: segDefLogo,
+    favorito: false,
+    preco: 31.9,
+    id: uuid(),
+    categoria: 'devops'
+  },
+  {
+    titulo: 'Segurança Defensiva',
+    descricao: 'Aprenda diferentes ataques e ameaças de aplicações web!',
+    foto: segOfLogo,
+    favorito: false,
+    preco: 31.9,
+    id: uuid(),
+    categoria: 'devops'
+  },
+  {
     titulo: 'Adobe Mobile',
     descricao: 'Já imaginou tratar imagens, editar vídeos e desenhar logos sem precisar de um computador? Com os aplicativos na versão mobile da Adobe, você vai expandir o seu universo criativo e dar vida às suas ideias em qualquer lugar que estiver!',
     foto: adobeLogo,
@@ -122,6 +155,33 @@ const initialState = [{
     titulo: 'Photoshop',
     descricao: 'Aprenda as principais ferramentas e conceitos para criar peças gráficas no Photoshop.',
     foto: photoshopLogo,
+    favorito: false,
+    preco: 27.5,
+    id: uuid(),
+    categoria: 'uxdesign'
+  },
+  {
+    titulo: 'Premiere',
+    descricao: 'Aprenda produção de vídeo com a ferramenta Adobe Premiere.',
+    foto: premiereLogo,
+    favorito: false,
+    preco: 27.5,
+    id: uuid(),
+    categoria: 'uxdesign'
+  },
+  {
+    titulo: 'Figma',
+    descricao: 'Aprenda a criar interfaces para produtos digitais no Figma, trazendo soluções inteligentes e inovadoras.',
+    foto: figmaLogo,
+    favorito: false,
+    preco: 27.5,
+    id: uuid(),
+    categoria: 'uxdesign'
+  },
+  {
+    titulo: 'Canva',
+    descricao: 'Design simples e acessível.',
+    foto: canvaLogo,
     favorito: false,
     preco: 27.5,
     id: uuid(),
