@@ -1,5 +1,5 @@
 import styles from './Item.module.scss'
-import { AiOutlineHeart, AiFillHeart, AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai"
+import { AiOutlineHeart, AiFillHeart, AiFillMinusCircle, AiFillPlusCircle, AiFillCloseCircle } from "react-icons/ai"
 import { FaCartPlus } from "react-icons/fa"
 import { mudarFavorito } from 'store/reducers/itens';
 import { useDispatch, useSelector } from "react-redux"
@@ -57,7 +57,6 @@ export default function Item(props) {
                 <div className={styles["item-titulo"]}>
                     <h2>Curso de {titulo}</h2>
                     <p>{descricao}</p>
-                    <button onClick={() => removerDoCarrinho(id)}>X</button>
                 </div>
                 <div className={styles["item-info"]}>
                     <div className={styles["item-preco"]}>
@@ -71,12 +70,20 @@ export default function Item(props) {
                         {carrinho
                             ? (
                                 <div className={styles.quantidade}>
+                                    <AiFillCloseCircle  
+                                        onClick={() => removerDoCarrinho(id)} 
+                                        size={28}
+                                        className={styles.remover}
+                                    />
                                     Quanto meses deseja contratar:
                                     <AiFillMinusCircle 
                                         {...quantidadeProps} 
                                         onClick={() => {
-                                            if(quantidade > 1) {
+                                            if(quantidade >= 0) {
                                                 dispatch(mudarQuantidade({ id, quantidade: -1 }))
+                                            } 
+                                            if (quantidade < 2) {
+                                                removerDoCarrinho(id)
                                             }
                                         }}
                                     />
