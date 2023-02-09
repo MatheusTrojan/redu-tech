@@ -1,6 +1,6 @@
 # Loja ReduTech
 
-<p>Página web criada para cumprir o desafio técnico da MKS Sistemas.</p>
+<p>Página web criada para praticar a utilização do Redux como forma de gerenciamento de estados globais.</p>
 
 ## Conteúdo deste Readme:
 
